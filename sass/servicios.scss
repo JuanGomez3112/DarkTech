@@ -1,0 +1,1147 @@
+@import 'variables';
+
+.servicios {
+    padding: 4rem 100px;
+
+    .ctn-servicios {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 2rem;
+
+
+        .servicio {
+            display: grid;
+            border-radius: 25px;
+            padding: 40px;
+            min-height: max-content;
+            height: auto;
+            gap: 4rem;
+            transition: background .4s ease-in-out;
+            flex-wrap: wrap;
+
+            &:hover {
+                background: $degradadoSecundario;
+
+                & .icons a i {
+                    color: $color3;
+                }
+            }
+
+            .icons {
+                display: flex;
+                justify-content: space-between;
+
+                i {
+                    font-size: 5rem;
+                    color: $color4;
+                }
+
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                h3 {
+                    width: 100%;
+                    font-size: 2.5rem;
+                    font-family: $fuentePrimaria;
+                    color: $color4;
+                }
+
+                p {
+                    font-family: $fuenteTerciaria;
+                    color: $color4;
+                    line-height: 30px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1000px) {
+        padding: 50px;
+    }
+
+    @media (max-width: 650px) {
+        padding: 2.5rem;
+
+        .ctn-servicios {
+
+            .servicio {
+                .icons {
+                    i {
+                        font-size: 3.5rem;
+                    }
+                }
+
+                .info {
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        padding: 2rem;
+
+        .ctn-servicios {
+            grid-template-columns: 1fr;
+        }
+    }
+
+}
+
+.single-servicios {
+
+    .portada-servicios {
+        display: flex;
+        position: relative;
+
+        .breadcrumb-servicios {
+            padding: 4rem 100px;
+            margin-left: 50px;
+            gap: 2rem;
+            display: flex;
+            flex-direction: column;
+            z-index: 3;
+
+            .breadcrumb-container {
+
+                ol {
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        list-style: none;
+
+                        &:nth-child(1) {
+
+                            a {
+                                margin-left: 0px;
+                                padding-left: 0px;
+                                text-decoration: none;
+                            }
+
+                            span {
+                                font-family: $fuenteTerciaria;
+                                color: $color4 !important;
+                                font-weight: 400;
+                                font-size: 16px;
+                            }
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $color3;
+                            font-weight: 600;
+                            font-size: 1rem;
+                        }
+
+                        span {
+                            font-family: $fuenteTerciaria;
+                            color: $color3;
+                            font-size: 1rem;
+                            font-weight: 600;
+
+                            &:hover {
+                                color: $color4;
+                            }
+
+                            i {
+                                color: $color4;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contenido-descripcion {
+                display: flex;
+                flex-direction: column;
+                gap: 1.125rem;
+
+                .titulo-servicios {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .titulo {
+                        display: flex;
+                        align-items: center;
+                        gap: 1.5rem;
+                        flex-wrap: wrap;
+
+                        i {
+                            font-size: 3rem;
+                            color: $color3;
+                        }
+
+                        h1 {
+                            font-family: $fuentePrimaria;
+                            color: $color3;
+                            font-weight: 400;
+                            font-size: 3.5rem;
+                        }
+                    }
+
+                    // .valoracion {
+
+                    // }
+                }
+
+                .descripcion-servicios {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.125rem;
+
+
+                    p {
+                        width: 65%;
+                        color: $color4;
+                        font-size: 1.125rem;
+                        text-align: justify;
+                    }
+
+                    a {
+                        color: $color1;
+                        background: $color3;
+
+                        &:hover {
+                            background: $degradadoTerciario;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+
+        }
+
+        >span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background-color: $color1;
+            opacity: 96%;
+        }
+    }
+
+    .informacion-servicios {
+        padding: 96px 150px;
+        display: flex;
+        gap: 80px;
+
+        .col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+
+            .beneficios {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                .titulo-info {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1rem;
+
+                    i {
+                        font-size: 1.5rem;
+                        color: $color4;
+                    }
+
+                    h3 {
+                        font-family: $fuenteSecundaria;
+                        font-size: 1.75rem;
+                        color: $color4;
+                        font-weight: 900;
+                    }
+
+                }
+
+                .info-beneficios {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+
+
+                    .lista_beneficios {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 1rem;
+
+
+                        i {
+                            font-size: 1rem;
+                            color: $color2;
+                        }
+
+                        li {
+                            font-family: $fuenteTerciaria;
+                            color: $color4;
+                            list-style: none;
+                            text-align: justify;
+
+                            strong {
+                                color: $color2;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .detalles,
+            .equipo,
+            .implementacion,
+            .ejemplos {
+
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                .titulo-info {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1rem;
+
+                    i {
+                        font-size: 1.5rem;
+                        color: $color4;
+                    }
+
+                    h3 {
+                        font-family: $fuenteSecundaria;
+                        font-size: 1.75rem;
+                        color: $color4;
+                        font-weight: 900;
+                    }
+
+                }
+
+                p {
+                    font-family: $fuenteTerciaria;
+                    font-size: 18px;
+                    color: $color4;
+                    font-weight: 400;
+                    line-height: 32px;
+                    text-align: justify;
+                }
+
+            }
+
+            .imagen-servicio {
+                width: 100%;
+                height: auto;
+                border-radius: 25px;
+
+                img {
+                    border-radius: 25px;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .otra-informacion {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                .titulo-info {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1rem;
+
+                    i {
+                        font-size: 1.5rem;
+                        color: $color4;
+                    }
+
+                    h3 {
+                        font-family: $fuenteSecundaria;
+                        font-size: 1.75rem;
+                        color: $color4;
+                        font-weight: 900;
+                    }
+                }
+
+                .info_otra-informacion {
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 1.5rem;
+                        gap: 0.5rem;
+
+                        li {
+                            color: $color3;
+
+                            a {
+                                font-family: $fuenteTerciaria;
+                                font-size: 18px;
+                                color: $color3;
+                                line-height: 1.5rem;
+                                text-decoration-line: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .proceso {
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3.5rem;
+        height: auto;
+        margin-bottom: 6rem;
+
+        h3 {
+            font-family: $fuentePrimaria;
+            color: $color4;
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .grafico-proceso {
+            width: max-content;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            svg {
+                width: 100%;
+                padding: 0 4rem;
+            }
+
+            ul {
+                width: 100%;
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    display: inline-block;
+                    margin: 0 10px;
+
+                    text-align: center;
+                    color: $color4;
+
+                }
+
+            }
+        }
+    }
+
+    .iniciar-proyecto {
+        border-radius: 0px;
+        padding: 50px;
+        display: flex;
+        gap: 3.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .titulo-descripcion {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            h3 {
+                font-family: $fuentePrimaria;
+                color: $color3;
+                font-size: 36px;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                color: $color4;
+                font-family: $fuenteSecundaria;
+                font-size: 1.5rem;
+            }
+        }
+
+        .botones {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+
+            a {
+
+
+                &:nth-child(1) {
+                    background-color: $color3;
+                    color: $color1;
+
+                    &:hover {
+                        background-color: transparent;
+                        background: $degradadoTerciario;
+                    }
+
+                }
+
+                &:nth-child(2) {
+                    border: 1px solid $color3;
+                    color: $color3;
+
+
+                    &:hover {
+                        background: $degradadoTerciario;
+                        border-color: transparent;
+                        color: $color1;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .otros-servicios {
+        width: 100%;
+        padding: 4rem 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        h3 {
+            font-family: $fuentePrimaria;
+            color: $color4;
+            font-size: 2.25rem;
+        }
+
+        .lista-servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 3rem;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+
+                .servicio {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 3rem;
+                    text-align: center;
+                    gap: 2rem;
+
+                    i {
+                        color: $color2;
+                        font-size: 3rem;
+                    }
+
+                    h6 {
+                        color: $color2;
+                        font-family: $fuenteTerciaria;
+                        font-size: 1.375rem;
+                    }
+
+
+                }
+
+                &:hover {
+                    background: $degradadoSecundario;
+
+                    & .servicio i,
+                    .servicio h6 {
+                        color: $color4;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    @media (max-width: 1200px) {
+
+        .portada-servicios {
+            .breadcrumb-servicios {
+                margin-left: 0;
+                gap: 1rem;
+
+                .contenido-descripcion {
+                    .descripcion-servicios {
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .informacion-servicios {
+            padding: 4rem 100px;
+
+            .col {
+                gap: 4rem;
+                grid-template-columns: 1fr;
+
+            }
+        }
+
+        .proceso {
+
+
+            .grafico-proceso {
+
+                svg {
+                    width: 90%;
+                    padding: 0 3rem;
+
+                }
+
+            }
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .portada-servicios {
+            .breadcrumb-servicios {
+                padding: 50px;
+                margin-left: 0;
+                gap: 1rem;
+
+                .contenido-descripcion {
+                    .descripcion-servicios {
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .informacion-servicios {
+            padding: 50px;
+        }
+
+        .otros-servicios {
+            padding: 50px;
+
+            .lista-servicios {
+                gap: 2rem;
+            }
+        }
+
+    }
+
+    @media (max-width: 650px) {
+        .portada-servicios {
+            .breadcrumb-servicios {
+                padding: 2.5rem;
+                margin-left: 0;
+                gap: 1rem;
+
+                .breadcrumb-container {
+
+                    ol {
+                        display: flex;
+                        align-items: center;
+
+                        li {
+                            display: flex;
+                            align-items: center;
+                            list-style: none;
+
+                            &:nth-child(1) {
+
+                                a {
+                                    margin-left: 0px;
+                                    padding-left: 0px;
+                                    text-decoration: none;
+                                }
+
+                                span {
+                                    font-family: $fuenteTerciaria;
+                                    color: $color4 !important;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .contenido-descripcion {
+                    .titulo-servicios {
+                        .titulo {
+                            gap: 1rem;
+
+                            i {
+                                font-size: 2rem;
+                            }
+
+                            h1 {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+
+                    .descripcion-servicios {
+                        p {
+                            width: 100%;
+                            font-size: 1rem;
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .proceso {
+
+            .grafico-proceso {
+
+                svg {
+                    width: 100%;
+                    padding: 0 2rem;
+                }
+
+                ul {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 1rem;
+
+                    li {
+                        margin: 0;
+                    }
+                }
+
+            }
+        }
+
+        .informacion-servicios {
+            padding: 2.5rem;
+
+            .col {
+                gap: 3rem;
+
+                .beneficios,
+                .detalles,
+                .implementacion,
+                .equipo,
+                .ejemplos,
+                .otra-informacion {
+                    .titulo-info {
+                        i {
+                            font-size: 1.5rem;
+                        }
+
+                        h3 {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                    }
+
+                    .info_otra-informacion {
+                        ul {
+                            li {
+                                line-height: 0.5rem;
+
+                                a {
+                                    font-size: 1rem;
+
+                                }
+                            }
+                        }
+                    }
+
+                    .info-beneficios {
+                        li {
+                            line-height: 1.5rem;
+                            font-size: 1rem;
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .iniciar-proyecto {
+
+
+            .titulo-descripcion {
+
+
+                h3 {
+
+                    font-size: 1.5rem;
+
+                }
+            }
+
+            .botones {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+
+                a {
+
+
+                    &:nth-child(1) {
+                        background-color: $color3;
+                        color: $color1;
+
+                        &:hover {
+                            background-color: transparent;
+                            background: $degradadoTerciario;
+                        }
+
+                    }
+
+                    &:nth-child(2) {
+                        border: 1px solid $color3;
+                        color: $color3;
+
+
+                        &:hover {
+                            background: $degradadoTerciario;
+                            border-color: transparent;
+                            color: $color1;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .otros-servicios {
+            padding: 2.5rem;
+
+
+            h3 {
+
+                font-size: 2rem;
+            }
+
+            .lista-servicios {
+
+
+                a {
+                    &:hover {
+                        background: $degradadoSecundario;
+
+                        & .servicio i,
+                        .servicio h6 {
+                            color: $color4;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media (max-width: 500px) {
+        .portada-servicios {
+            .breadcrumb-servicios {
+                padding: 2rem;
+                
+            }
+
+        }
+
+        .informacion-servicios {
+            padding: 2rem;
+        }
+
+        .otros-servicios {
+            padding: 2rem;
+        }
+    }
+}
+
+.seccion-proyecto {
+    .portada-proyecto {
+        display: flex;
+        position: relative;
+
+        .breadcrumb-proyecto {
+            padding: 4rem 100px;
+            gap: 3.125rem;
+            display: flex;
+            flex-direction: column;
+            z-index: 3;
+
+            h1 {
+                margin-bottom: 0;
+            }
+
+            .contenido-proyecto {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                width: 100%;
+                gap: 5rem;
+
+                .descripcion-subtitulo {
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    gap: 2.5rem;
+
+                    h3 {
+                        text-align: center;
+                        font-family: $fuentePrimaria;
+                        color: $color4;
+                    }
+
+                    p {
+                        font-family: $fuenteTerciaria;
+                        color: $color4;
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+                }
+
+                form {
+                    margin: 0 auto;
+                    position: relative;
+                    width: 40%;
+
+                    div {
+                        fieldset {
+                            div {
+                                justify-content: center;
+
+                                .wsf-field-wrapper {
+
+                                    label,
+                                    small {
+                                        color: $color4;
+                                    }
+
+                                    .wsf-input-group {
+                                        border-radius: 1rem;
+                                        outline: none;
+                                        border-color: none;
+                                    }
+
+                                    .wsf-input-group-prepend {
+                                        border-radius: 1rem 0 0 1rem;
+                                        outline: none;
+                                        border-color: none;
+                                    }
+
+                                    input,
+                                    textarea {
+                                        border-radius: 1rem;
+                                        padding: 0.8rem 1rem;
+                                        outline: none;
+                                        border-color: none;
+
+                                        &::placeholder {
+                                            color: $color1;
+                                        }
+                                    }
+
+                                    >div {
+                                        justify-content: center;
+
+                                        .wsf-inline {
+
+                                            input[type='checkbox']:checked {
+                                                background-color: $color3;
+                                            }
+                                        }
+                                    }
+
+                                    span {
+                                        strong {
+                                            color: $color2;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .wsf-bottom {
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 0;
+
+                                button {
+                                    width: max-content;
+                                    padding: 0.6875rem 2rem;
+                                    font-family: $fuenteTerciaria;
+                                    font-weight: 700;
+                                    border-radius: 1rem;
+                                    transition: all 0.3s ease-in-out;
+                                    background-color: $color3;
+                                    border: none;
+                                    color: $color1;
+
+                                    &:hover {
+                                        background: $degradadoTerciario;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+
+        }
+
+        >span {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background-color: $color1;
+            opacity: 96%;
+        }
+    }
+
+    @media (max-width: 1500px) {
+        .portada-proyecto {
+            .breadcrumb-proyecto {
+
+                .contenido-proyecto {
+
+                    .descripcion-subtitulo {
+                        width: 70%;
+                    }
+
+                    form {
+                        width: 60%;
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .portada-proyecto {
+            .breadcrumb-proyecto {
+
+                .contenido-proyecto {
+
+                    .descripcion-subtitulo {
+                        width: 100%;
+
+                        p {
+                            text-align: justify;
+                        }
+                    }
+
+                    form {
+                        width: 60%;
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .portada-proyecto {
+            .breadcrumb-proyecto {
+                padding: 50px;
+
+                .contenido-proyecto {
+
+                    .descripcion-subtitulo {
+                        width: 100%;
+
+                        p {
+                            text-align: justify;
+                        }
+                    }
+
+                    form {
+                        width: 70%;
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media (max-width: 650px) {
+        .portada-proyecto {
+            .breadcrumb-proyecto {
+                padding: 2.5rem;
+
+                .contenido-proyecto {
+
+                    .descripcion-subtitulo {
+                        width: 100%;
+
+                        h3 {
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+                            text-align: justify;
+                        }
+                    }
+
+                    form {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+}

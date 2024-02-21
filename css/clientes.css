@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background: linear-gradient(180deg, var(--color-principal) 0.21%, #0D0D0D 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.fondo-transparente {
+  border-radius: 25px;
+  border: 1px solid var(--Transparent, rgba(255, 255, 255, 0.03));
+  background: var(--Transparent, linear-gradient(180deg, rgba(255, 255, 255, 0.03) -30.29%, rgba(255, 255, 255, 0) 144.92%));
+  backdrop-filter: blur(5px);
+}
+
+.boton {
+  padding: 0.6875rem 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  width: max-content;
+}
+@media (max-width: 650px) {
+  .boton {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+  }
+}
+
+.seccion-clientes .landing-clientes {
+  display: flex;
+  position: relative;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio {
+  width: 100%;
+  padding: 64px 100px;
+  z-index: 3;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido {
+  margin: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .info-formulario {
+  width: 100%;
+  color: var(--color-fondo);
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .info-formulario h2 {
+  font-family: "Caprasimo", cursive;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 48px;
+  margin-bottom: 2rem;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .info-formulario p {
+  color: var(--color-fondo);
+  text-align: justify;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .info-formulario .botones-clientes {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .info-formulario .botones-clientes a {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  border: 1px solid var(--color-secundario);
+  color: var(--color-secundario);
+  align-items: center;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .info-formulario .botones-clientes a i {
+  font-size: 20px;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .info-formulario .botones-clientes a:hover {
+  border: 1px solid transparent;
+  color: var(--color-principal);
+  background: linear-gradient(138deg, var(--color-fondo) 0.21%, var(--color-contraste) 100.21%);
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .info-formulario .botones-clientes a label {
+  cursor: pointer;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container {
+  width: auto;
+  margin: 0 auto;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 215px);
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .testimonio {
+  grid-column: span 3;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .testimonio > label {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-fondo);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .testimonio textarea {
+  width: 100%;
+  height: 150px;
+  min-height: 150px;
+  max-height: 150px;
+  box-sizing: border-box;
+  padding: 1rem;
+  border: none;
+  border-radius: 16px;
+  resize: vertical;
+  font-size: 18px;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .testimonio textarea::placeholder {
+  color: rgba(var(--color-principal), 0.8);
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .nombre,
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .profesion,
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .empresa {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .nombre > label,
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .profesion > label,
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .empresa > label {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-fondo);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .nombre > label span,
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .profesion > label span,
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .empresa > label span {
+  color: var(--color-secundario);
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .nombre input,
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .profesion input,
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .empresa input {
+  background-color: #d9d9d9;
+  height: 45px;
+  font-size: 18px;
+  padding: 0 1rem;
+  border-radius: 16px;
+  border: none;
+  width: auto;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .nombre input::placeholder,
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .profesion input::placeholder,
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .empresa input::placeholder {
+  color: rgba(var(--color-principal), 0.8);
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .foto {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .foto > label {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-fondo);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .foto > label span {
+  color: var(--color-secundario);
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .foto input {
+  background-color: #d9d9d9;
+  height: 45px;
+  font-size: 20px;
+  padding: 0 1rem;
+  border-radius: 16px;
+  border: none;
+  width: auto;
+  position: relative;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .foto input[type=file] {
+  padding: 0.5rem;
+  max-width: 446px;
+  padding-left: 200px;
+  font-size: 20px;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .foto input::-webkit-file-upload-button {
+  border: none;
+  padding: 0 0.5rem;
+  background-color: var(--color-secundario);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 45px;
+  font-size: 20px;
+  color: var(--color-principal);
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .ctn-valoracion {
+  grid-column: span 1/4;
+  grid-row: span 1/4;
+  display: flex;
+  align-items: end;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .ctn-valoracion .valoracion {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .ctn-valoracion .valoracion label {
+  left: 0;
+  font-size: 2rem;
+  margin-bottom: 0;
+  color: var(--color-fondo);
+  font-weight: 400;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .ctn-valoracion .valoracion input[type=radio] {
+  display: none;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .ctn-valoracion .valoracion label:hover,
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .ctn-valoracion .valoracion label:hover ~ label {
+  color: var(--color-secundario);
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .ctn-valoracion .valoracion input[type=radio]:checked ~ label {
+  color: var(--color-secundario);
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .checkbox {
+  margin-bottom: 20px;
+  grid-column: span 3;
+  display: flex;
+  justify-content: center;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .checkbox label {
+  color: var(--color-fondo);
+  display: inline;
+  align-items: center;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .checkbox label input[type=checkbox] {
+  margin-right: 8px;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  accent-color: var(--color-contraste);
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .checkbox label a {
+  margin-left: 8px;
+  color: var(--color-contraste);
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .button {
+  display: flex;
+  justify-content: center;
+  grid-column: span 1/3;
+  grid-row: span 1/6;
+}
+.seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido .form-container .button button {
+  background-color: var(--color-contraste);
+  color: var(--color-principal);
+  padding: 10px 2rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+.seccion-clientes .landing-clientes img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.seccion-clientes .landing-clientes > span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: var(--color-principal);
+  opacity: 96%;
+}
+.seccion-clientes .cont-clientes {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+.seccion-clientes .cont-clientes .items-clientes {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.seccion-clientes .cont-clientes .items-clientes .titulo-user {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  padding: 2rem;
+}
+.seccion-clientes .cont-clientes .items-clientes .titulo-user h4,
+.seccion-clientes .cont-clientes .items-clientes .titulo-user p {
+  color: var(--color-fondo);
+}
+.seccion-clientes .cont-clientes .items-clientes img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.seccion-clientes .cont-clientes .items-clientes span {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(17, 17, 43, 0) 0%, #11112B 100%);
+}
+.seccion-clientes .cont-clientes .items-clientes:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 1450px) {
+  .seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1200px) {
+  .seccion-clientes .landing-clientes .formulario-testimonio > .ctn-contenido {
+    margin: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .seccion-clientes .landing-clientes .formulario-testimonio {
+    padding: 50px;
+  }
+  .seccion-clientes .landing-clientes .formulario-testimonio .ctn-contenido .form-container {
+    grid-template-columns: repeat(3, 200px);
+  }
+  .seccion-clientes .landing-clientes .formulario-testimonio .ctn-contenido .form-container .foto input[type=file] {
+    max-width: 400px;
+  }
+  .seccion-clientes .cont-clientes {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .seccion-clientes .cont-clientes .items-clientes {
+    height: 400px;
+  }
+}
+@media (max-width: 750px) {
+  .seccion-clientes .landing-clientes .formulario-testimonio {
+    padding: 50px;
+  }
+  .seccion-clientes .landing-clientes .formulario-testimonio .ctn-contenido .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+  }
+  .seccion-clientes .landing-clientes .formulario-testimonio .ctn-contenido .form-container .testimonio {
+    grid-column: none;
+    width: 100%;
+  }
+  .seccion-clientes .landing-clientes .formulario-testimonio .ctn-contenido .form-container .foto {
+    width: 100%;
+  }
+  .seccion-clientes .landing-clientes .formulario-testimonio .ctn-contenido .form-container .foto input[type=file] {
+    max-width: 100%;
+  }
+  .seccion-clientes .cont-clientes {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .seccion-clientes .cont-clientes .items-clientes {
+    height: 400px;
+  }
+}
+@media (max-width: 650px) {
+  .seccion-clientes .landing-clientes .formulario-testimonio {
+    padding: 2.5rem;
+  }
+  .seccion-clientes .landing-clientes .formulario-testimonio .ctn-contenido .info-formulario h2 {
+    font-size: 2rem;
+    line-height: 36px;
+  }
+  .seccion-clientes .landing-clientes .formulario-testimonio .ctn-contenido .form-container {
+    max-width: 450px;
+  }
+  .seccion-clientes .cont-clientes {
+    padding: 2.5rem;
+  }
+  .seccion-clientes .cont-clientes .items-clientes {
+    height: 300px;
+  }
+}
+@media (max-width: 550px) {
+  .seccion-clientes .landing-clientes .formulario-testimonio .ctn-contenido .form-container {
+    max-width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .seccion-clientes .landing-clientes .formulario-testimonio {
+    padding: 2rem;
+  }
+  .seccion-clientes .landing-clientes .formulario-testimonio .ctn-contenido .form-container {
+    max-width: 350px;
+  }
+  .seccion-clientes .cont-clientes {
+    padding: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .seccion-clientes .cont-clientes {
+    grid-template-columns: 1fr;
+  }
+  .seccion-clientes .cont-clientes .items-clientes {
+    height: 250px;
+  }
+}
+
+/*# sourceMappingURL=clientes.css.map */

@@ -1,0 +1,246 @@
+.portada-ayuda {
+    display: flex;
+    position: relative;
+
+    .breadcrumb-search {
+        width: 100%;
+        padding: 4rem 100px;
+        z-index: 3;
+
+        .ctn-search {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+
+            h2 {
+                font-family: $fuentePrimaria;
+                color: $color4;
+                font-size: 36px;
+                font-weight: 400;
+                text-align: center;
+            }
+
+            p {
+                font-family: $fuenteTerciaria;
+                color: $color4;
+                font-size: 20px;
+                line-height: 32px;
+                max-width: 800px;
+                text-align: center;
+            }
+
+            .search-group {
+                width: 62.91%;
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+                .search {
+                    width: 100%;
+                    display: flex;
+
+                    input {
+                        width: 100%;
+                        padding: 0.75rem 4rem;
+                        background-color: transparent;
+                        border-radius: 22px;
+                        border: none;
+                        border-bottom: 1px solid $color3;
+                        outline: none;
+                        color: $color4;
+
+                        &::placeholder {
+                            color: $color3;
+                        }
+                    }
+
+                    i {
+                        position: absolute;
+                        left: 2rem;
+                        top: 0.75rem;
+                        color: $color3;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+
+    }
+
+    >span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: $color1;
+        opacity: 96%;
+    }
+
+    @media (max-width: 1000px) {
+        .breadcrumb-search{
+            padding: 50px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .breadcrumb-search{
+            padding: 2.5rem;
+
+            .ctn-search {
+                h2 {
+                    font-size: 24px;
+                }
+
+                p{
+                    font-size: 18px;
+                }
+
+                .search-group {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .breadcrumb-search{
+            padding: 2rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .breadcrumb-search{
+
+            .ctn-search {
+                h2 {
+                    font-size: 20px;
+                }
+
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.portada-items-ayuda {
+    display: flex;
+    position: relative;
+
+
+    >.breadcrumb-search {
+        width: 100%;
+        padding: 64px 100px;
+        z-index: 3;
+
+        .breadcrumb-title {
+
+            .titulo-icon {
+                margin-top: 1.5rem;
+
+                display: flex;
+                align-items: center;
+                margin-bottom: 8rem;
+                gap: 40px;
+
+                i {
+                    font-size: 64px;
+                    color: $color3;
+                }
+
+                h1 {
+                    margin-bottom: 0;
+                    font-size: 64px;
+                }
+            }
+        }
+
+        .ctn-search {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                font-family: $fuentePrimaria;
+                color: $color4;
+                font-size: 36px;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-family: $fuenteTerciaria;
+                color: $color4;
+                font-size: 18px;
+                line-height: 32px;
+                max-width: 800px;
+                text-align: center;
+                margin-bottom: 3rem;
+            }
+
+            .search-group {
+                width: 62.91%;
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+                .search {
+                    width: 100%;
+                    display: flex;
+
+                    input {
+                        width: 100%;
+                        padding: 0.75rem 4rem;
+                        background-color: transparent;
+                        border-radius: 22px;
+                        border: none;
+                        border-bottom: 1px solid $color3;
+                        outline: none;
+                        color: $color4;
+
+                        &::placeholder {
+                            color: $color3;
+                        }
+                    }
+
+                    i {
+                        position: absolute;
+                        left: 2rem;
+                        top: 0.75rem;
+                        color: $color3;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+
+    }
+
+    >span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: $color1;
+        opacity: 96%;
+    }
+}

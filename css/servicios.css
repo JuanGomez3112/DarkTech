@@ -1,0 +1,910 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background: linear-gradient(180deg, var(--color-principal) 0.21%, #0D0D0D 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.fondo-transparente {
+  border-radius: 25px;
+  border: 1px solid var(--Transparent, rgba(255, 255, 255, 0.03));
+  background: var(--Transparent, linear-gradient(180deg, rgba(255, 255, 255, 0.03) -30.29%, rgba(255, 255, 255, 0) 144.92%));
+  backdrop-filter: blur(5px);
+}
+
+.boton {
+  padding: 0.6875rem 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  width: max-content;
+}
+@media (max-width: 650px) {
+  .boton {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+  }
+}
+
+.servicios {
+  padding: 4rem 100px;
+}
+.servicios .ctn-servicios {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+.servicios .ctn-servicios .servicio {
+  display: grid;
+  border-radius: 25px;
+  padding: 40px;
+  min-height: max-content;
+  height: auto;
+  gap: 4rem;
+  transition: background 0.4s ease-in-out;
+  flex-wrap: wrap;
+}
+.servicios .ctn-servicios .servicio:hover {
+  background: linear-gradient(133deg, var(--color-contraste) 0.21%, var(--color-terciario) 103.64%);
+}
+.servicios .ctn-servicios .servicio:hover .icons a i {
+  color: var(--color-contraste);
+}
+.servicios .ctn-servicios .servicio .icons {
+  display: flex;
+  justify-content: space-between;
+}
+.servicios .ctn-servicios .servicio .icons i {
+  font-size: 5rem;
+  color: var(--color-fondo);
+}
+.servicios .ctn-servicios .servicio .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.servicios .ctn-servicios .servicio .info h3 {
+  width: 100%;
+  font-size: 2.5rem;
+  font-family: "Caprasimo", cursive;
+  color: var(--color-fondo);
+}
+.servicios .ctn-servicios .servicio .info p {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-fondo);
+  line-height: 30px;
+  font-weight: 400;
+}
+@media (max-width: 1000px) {
+  .servicios {
+    padding: 50px;
+  }
+}
+@media (max-width: 650px) {
+  .servicios {
+    padding: 2.5rem;
+  }
+  .servicios .ctn-servicios .servicio .icons i {
+    font-size: 3.5rem;
+  }
+  .servicios .ctn-servicios .servicio .info h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .servicios {
+    padding: 2rem;
+  }
+  .servicios .ctn-servicios {
+    grid-template-columns: 1fr;
+  }
+}
+
+.single-servicios .portada-servicios {
+  display: flex;
+  position: relative;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios {
+  padding: 4rem 100px;
+  margin-left: 50px;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol {
+  display: flex;
+  align-items: center;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol li:nth-child(1) a {
+  margin-left: 0px;
+  padding-left: 0px;
+  text-decoration: none;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol li:nth-child(1) span {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-fondo) !important;
+  font-weight: 400;
+  font-size: 16px;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol li a {
+  text-decoration: none;
+  color: var(--color-contraste);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol li span {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-contraste);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol li span:hover {
+  color: var(--color-fondo);
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol li span i {
+  color: var(--color-fondo);
+  font-size: 14px;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .titulo-servicios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .titulo-servicios .titulo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .titulo-servicios .titulo i {
+  font-size: 3rem;
+  color: var(--color-contraste);
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .titulo-servicios .titulo h1 {
+  font-family: "Caprasimo", cursive;
+  color: var(--color-contraste);
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .descripcion-servicios {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .descripcion-servicios p {
+  width: 65%;
+  color: var(--color-fondo);
+  font-size: 1.125rem;
+  text-align: justify;
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .descripcion-servicios a {
+  color: var(--color-principal);
+  background: var(--color-contraste);
+}
+.single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .descripcion-servicios a:hover {
+  background: linear-gradient(138deg, var(--color-fondo) 0.21%, var(--color-contraste) 100.21%);
+}
+.single-servicios .portada-servicios img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.single-servicios .portada-servicios > span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: var(--color-principal);
+  opacity: 96%;
+}
+.single-servicios .informacion-servicios {
+  padding: 96px 150px;
+  display: flex;
+  gap: 80px;
+}
+.single-servicios .informacion-servicios .col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+.single-servicios .informacion-servicios .col .beneficios {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.single-servicios .informacion-servicios .col .beneficios .titulo-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.single-servicios .informacion-servicios .col .beneficios .titulo-info i {
+  font-size: 1.5rem;
+  color: var(--color-fondo);
+}
+.single-servicios .informacion-servicios .col .beneficios .titulo-info h3 {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.75rem;
+  color: var(--color-fondo);
+  font-weight: 900;
+}
+.single-servicios .informacion-servicios .col .beneficios .info-beneficios {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.single-servicios .informacion-servicios .col .beneficios .info-beneficios .lista_beneficios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.single-servicios .informacion-servicios .col .beneficios .info-beneficios .lista_beneficios i {
+  font-size: 1rem;
+  color: var(--color-secundario);
+}
+.single-servicios .informacion-servicios .col .beneficios .info-beneficios .lista_beneficios li {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-fondo);
+  list-style: none;
+  text-align: justify;
+}
+.single-servicios .informacion-servicios .col .beneficios .info-beneficios .lista_beneficios li strong {
+  color: var(--color-secundario);
+}
+.single-servicios .informacion-servicios .col .detalles,
+.single-servicios .informacion-servicios .col .equipo,
+.single-servicios .informacion-servicios .col .implementacion,
+.single-servicios .informacion-servicios .col .ejemplos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.single-servicios .informacion-servicios .col .detalles .titulo-info,
+.single-servicios .informacion-servicios .col .equipo .titulo-info,
+.single-servicios .informacion-servicios .col .implementacion .titulo-info,
+.single-servicios .informacion-servicios .col .ejemplos .titulo-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.single-servicios .informacion-servicios .col .detalles .titulo-info i,
+.single-servicios .informacion-servicios .col .equipo .titulo-info i,
+.single-servicios .informacion-servicios .col .implementacion .titulo-info i,
+.single-servicios .informacion-servicios .col .ejemplos .titulo-info i {
+  font-size: 1.5rem;
+  color: var(--color-fondo);
+}
+.single-servicios .informacion-servicios .col .detalles .titulo-info h3,
+.single-servicios .informacion-servicios .col .equipo .titulo-info h3,
+.single-servicios .informacion-servicios .col .implementacion .titulo-info h3,
+.single-servicios .informacion-servicios .col .ejemplos .titulo-info h3 {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.75rem;
+  color: var(--color-fondo);
+  font-weight: 900;
+}
+.single-servicios .informacion-servicios .col .detalles p,
+.single-servicios .informacion-servicios .col .equipo p,
+.single-servicios .informacion-servicios .col .implementacion p,
+.single-servicios .informacion-servicios .col .ejemplos p {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: var(--color-fondo);
+  font-weight: 400;
+  line-height: 32px;
+  text-align: justify;
+}
+.single-servicios .informacion-servicios .col .imagen-servicio {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+.single-servicios .informacion-servicios .col .imagen-servicio img {
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.single-servicios .informacion-servicios .col .otra-informacion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.single-servicios .informacion-servicios .col .otra-informacion .titulo-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.single-servicios .informacion-servicios .col .otra-informacion .titulo-info i {
+  font-size: 1.5rem;
+  color: var(--color-fondo);
+}
+.single-servicios .informacion-servicios .col .otra-informacion .titulo-info h3 {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.75rem;
+  color: var(--color-fondo);
+  font-weight: 900;
+}
+.single-servicios .informacion-servicios .col .otra-informacion .info_otra-informacion ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  gap: 0.5rem;
+}
+.single-servicios .informacion-servicios .col .otra-informacion .info_otra-informacion ul li {
+  color: var(--color-contraste);
+}
+.single-servicios .informacion-servicios .col .otra-informacion .info_otra-informacion ul li a {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: var(--color-contraste);
+  line-height: 1.5rem;
+  text-decoration-line: underline;
+}
+.single-servicios .proceso {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.5rem;
+  height: auto;
+  margin-bottom: 6rem;
+}
+.single-servicios .proceso h3 {
+  font-family: "Caprasimo", cursive;
+  color: var(--color-fondo);
+  font-size: 32px;
+  font-weight: 400;
+}
+.single-servicios .proceso .grafico-proceso {
+  width: max-content;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.single-servicios .proceso .grafico-proceso svg {
+  width: 100%;
+  padding: 0 4rem;
+}
+.single-servicios .proceso .grafico-proceso ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.single-servicios .proceso .grafico-proceso ul li {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+  color: var(--color-fondo);
+}
+.single-servicios .iniciar-proyecto {
+  border-radius: 0px;
+  padding: 50px;
+  display: flex;
+  gap: 3.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.single-servicios .iniciar-proyecto .titulo-descripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.single-servicios .iniciar-proyecto .titulo-descripcion h3 {
+  font-family: "Caprasimo", cursive;
+  color: var(--color-contraste);
+  font-size: 36px;
+  text-align: center;
+}
+.single-servicios .iniciar-proyecto .titulo-descripcion p {
+  text-align: center;
+  color: var(--color-fondo);
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+}
+.single-servicios .iniciar-proyecto .botones {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.single-servicios .iniciar-proyecto .botones a:nth-child(1) {
+  background-color: var(--color-contraste);
+  color: var(--color-principal);
+}
+.single-servicios .iniciar-proyecto .botones a:nth-child(1):hover {
+  background-color: transparent;
+  background: linear-gradient(138deg, var(--color-fondo) 0.21%, var(--color-contraste) 100.21%);
+}
+.single-servicios .iniciar-proyecto .botones a:nth-child(2) {
+  border: 1px solid var(--color-contraste);
+  color: var(--color-contraste);
+}
+.single-servicios .iniciar-proyecto .botones a:nth-child(2):hover {
+  background: linear-gradient(138deg, var(--color-fondo) 0.21%, var(--color-contraste) 100.21%);
+  border-color: transparent;
+  color: var(--color-principal);
+}
+.single-servicios .otros-servicios {
+  width: 100%;
+  padding: 4rem 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.single-servicios .otros-servicios h3 {
+  font-family: "Caprasimo", cursive;
+  color: var(--color-fondo);
+  font-size: 2.25rem;
+}
+.single-servicios .otros-servicios .lista-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 3rem;
+}
+.single-servicios .otros-servicios .lista-servicios a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.single-servicios .otros-servicios .lista-servicios a .servicio {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  text-align: center;
+  gap: 2rem;
+}
+.single-servicios .otros-servicios .lista-servicios a .servicio i {
+  color: var(--color-secundario);
+  font-size: 3rem;
+}
+.single-servicios .otros-servicios .lista-servicios a .servicio h6 {
+  color: var(--color-secundario);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.375rem;
+}
+.single-servicios .otros-servicios .lista-servicios a:hover {
+  background: linear-gradient(133deg, var(--color-contraste) 0.21%, var(--color-terciario) 103.64%);
+}
+.single-servicios .otros-servicios .lista-servicios a:hover .servicio i,
+.single-servicios .otros-servicios .lista-servicios a:hover .servicio h6 {
+  color: var(--color-fondo);
+}
+@media (max-width: 1200px) {
+  .single-servicios .portada-servicios .breadcrumb-servicios {
+    margin-left: 0;
+    gap: 1rem;
+  }
+  .single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .descripcion-servicios p {
+    width: 100%;
+  }
+  .single-servicios .informacion-servicios {
+    padding: 4rem 100px;
+  }
+  .single-servicios .informacion-servicios .col {
+    gap: 4rem;
+    grid-template-columns: 1fr;
+  }
+  .single-servicios .proceso .grafico-proceso svg {
+    width: 90%;
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 1000px) {
+  .single-servicios .portada-servicios .breadcrumb-servicios {
+    padding: 50px;
+    margin-left: 0;
+    gap: 1rem;
+  }
+  .single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .descripcion-servicios p {
+    width: 100%;
+  }
+  .single-servicios .informacion-servicios {
+    padding: 50px;
+  }
+  .single-servicios .otros-servicios {
+    padding: 50px;
+  }
+  .single-servicios .otros-servicios .lista-servicios {
+    gap: 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .single-servicios .portada-servicios .breadcrumb-servicios {
+    padding: 2.5rem;
+    margin-left: 0;
+    gap: 1rem;
+  }
+  .single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol {
+    display: flex;
+    align-items: center;
+  }
+  .single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  .single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol li:nth-child(1) a {
+    margin-left: 0px;
+    padding-left: 0px;
+    text-decoration: none;
+  }
+  .single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol li:nth-child(1) span {
+    font-family: "Raleway", sans-serif;
+    color: var(--color-fondo) !important;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .single-servicios .portada-servicios .breadcrumb-servicios .breadcrumb-container ol li:nth-child(2) {
+    display: none;
+  }
+  .single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .titulo-servicios .titulo {
+    gap: 1rem;
+  }
+  .single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .titulo-servicios .titulo i {
+    font-size: 2rem;
+  }
+  .single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .titulo-servicios .titulo h1 {
+    font-size: 2rem;
+  }
+  .single-servicios .portada-servicios .breadcrumb-servicios .contenido-descripcion .descripcion-servicios p {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .single-servicios .proceso .grafico-proceso svg {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .single-servicios .proceso .grafico-proceso ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .single-servicios .proceso .grafico-proceso ul li {
+    margin: 0;
+  }
+  .single-servicios .informacion-servicios {
+    padding: 2.5rem;
+  }
+  .single-servicios .informacion-servicios .col {
+    gap: 3rem;
+  }
+  .single-servicios .informacion-servicios .col .beneficios .titulo-info i,
+  .single-servicios .informacion-servicios .col .detalles .titulo-info i,
+  .single-servicios .informacion-servicios .col .implementacion .titulo-info i,
+  .single-servicios .informacion-servicios .col .equipo .titulo-info i,
+  .single-servicios .informacion-servicios .col .ejemplos .titulo-info i,
+  .single-servicios .informacion-servicios .col .otra-informacion .titulo-info i {
+    font-size: 1.5rem;
+  }
+  .single-servicios .informacion-servicios .col .beneficios .titulo-info h3,
+  .single-servicios .informacion-servicios .col .detalles .titulo-info h3,
+  .single-servicios .informacion-servicios .col .implementacion .titulo-info h3,
+  .single-servicios .informacion-servicios .col .equipo .titulo-info h3,
+  .single-servicios .informacion-servicios .col .ejemplos .titulo-info h3,
+  .single-servicios .informacion-servicios .col .otra-informacion .titulo-info h3 {
+    font-size: 1.5rem;
+  }
+  .single-servicios .informacion-servicios .col .beneficios p,
+  .single-servicios .informacion-servicios .col .detalles p,
+  .single-servicios .informacion-servicios .col .implementacion p,
+  .single-servicios .informacion-servicios .col .equipo p,
+  .single-servicios .informacion-servicios .col .ejemplos p,
+  .single-servicios .informacion-servicios .col .otra-informacion p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .single-servicios .informacion-servicios .col .beneficios .info_otra-informacion ul li,
+  .single-servicios .informacion-servicios .col .detalles .info_otra-informacion ul li,
+  .single-servicios .informacion-servicios .col .implementacion .info_otra-informacion ul li,
+  .single-servicios .informacion-servicios .col .equipo .info_otra-informacion ul li,
+  .single-servicios .informacion-servicios .col .ejemplos .info_otra-informacion ul li,
+  .single-servicios .informacion-servicios .col .otra-informacion .info_otra-informacion ul li {
+    line-height: 0.5rem;
+  }
+  .single-servicios .informacion-servicios .col .beneficios .info_otra-informacion ul li a,
+  .single-servicios .informacion-servicios .col .detalles .info_otra-informacion ul li a,
+  .single-servicios .informacion-servicios .col .implementacion .info_otra-informacion ul li a,
+  .single-servicios .informacion-servicios .col .equipo .info_otra-informacion ul li a,
+  .single-servicios .informacion-servicios .col .ejemplos .info_otra-informacion ul li a,
+  .single-servicios .informacion-servicios .col .otra-informacion .info_otra-informacion ul li a {
+    font-size: 1rem;
+  }
+  .single-servicios .informacion-servicios .col .beneficios .info-beneficios li,
+  .single-servicios .informacion-servicios .col .detalles .info-beneficios li,
+  .single-servicios .informacion-servicios .col .implementacion .info-beneficios li,
+  .single-servicios .informacion-servicios .col .equipo .info-beneficios li,
+  .single-servicios .informacion-servicios .col .ejemplos .info-beneficios li,
+  .single-servicios .informacion-servicios .col .otra-informacion .info-beneficios li {
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+  .single-servicios .iniciar-proyecto .titulo-descripcion h3 {
+    font-size: 1.5rem;
+  }
+  .single-servicios .iniciar-proyecto .botones {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .single-servicios .iniciar-proyecto .botones a:nth-child(1) {
+    background-color: var(--color-contraste);
+    color: var(--color-principal);
+  }
+  .single-servicios .iniciar-proyecto .botones a:nth-child(1):hover {
+    background-color: transparent;
+    background: linear-gradient(138deg, var(--color-fondo) 0.21%, var(--color-contraste) 100.21%);
+  }
+  .single-servicios .iniciar-proyecto .botones a:nth-child(2) {
+    border: 1px solid var(--color-contraste);
+    color: var(--color-contraste);
+  }
+  .single-servicios .iniciar-proyecto .botones a:nth-child(2):hover {
+    background: linear-gradient(138deg, var(--color-fondo) 0.21%, var(--color-contraste) 100.21%);
+    border-color: transparent;
+    color: var(--color-principal);
+  }
+  .single-servicios .otros-servicios {
+    padding: 2.5rem;
+  }
+  .single-servicios .otros-servicios h3 {
+    font-size: 2rem;
+  }
+  .single-servicios .otros-servicios .lista-servicios a:hover {
+    background: linear-gradient(133deg, var(--color-contraste) 0.21%, var(--color-terciario) 103.64%);
+  }
+  .single-servicios .otros-servicios .lista-servicios a:hover .servicio i,
+  .single-servicios .otros-servicios .lista-servicios a:hover .servicio h6 {
+    color: var(--color-fondo);
+  }
+}
+@media (max-width: 500px) {
+  .single-servicios .portada-servicios .breadcrumb-servicios {
+    padding: 2rem;
+  }
+  .single-servicios .informacion-servicios {
+    padding: 2rem;
+  }
+  .single-servicios .otros-servicios {
+    padding: 2rem;
+  }
+}
+
+.seccion-proyecto .portada-proyecto {
+  display: flex;
+  position: relative;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto {
+  padding: 4rem 100px;
+  gap: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto h1 {
+  margin-bottom: 0;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  gap: 5rem;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto .descripcion-subtitulo {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 2.5rem;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto .descripcion-subtitulo h3 {
+  text-align: center;
+  font-family: "Caprasimo", cursive;
+  color: var(--color-fondo);
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto .descripcion-subtitulo p {
+  font-family: "Raleway", sans-serif;
+  color: var(--color-fondo);
+  text-align: center;
+  font-size: 1rem;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form {
+  margin: 0 auto;
+  position: relative;
+  width: 40%;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset div {
+  justify-content: center;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset div .wsf-field-wrapper label,
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset div .wsf-field-wrapper small {
+  color: var(--color-fondo);
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset div .wsf-field-wrapper .wsf-input-group {
+  border-radius: 1rem;
+  outline: none;
+  border-color: none;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset div .wsf-field-wrapper .wsf-input-group-prepend {
+  border-radius: 1rem 0 0 1rem;
+  outline: none;
+  border-color: none;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset div .wsf-field-wrapper input,
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset div .wsf-field-wrapper textarea {
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  outline: none;
+  border-color: none;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset div .wsf-field-wrapper input::placeholder,
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset div .wsf-field-wrapper textarea::placeholder {
+  color: var(--color-principal);
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset div .wsf-field-wrapper > div {
+  justify-content: center;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset div .wsf-field-wrapper > div .wsf-inline input[type=checkbox]:checked {
+  background-color: var(--color-contraste);
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset div .wsf-field-wrapper span strong {
+  color: var(--color-secundario);
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset .wsf-bottom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset .wsf-bottom button {
+  width: max-content;
+  padding: 0.6875rem 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-contraste);
+  border: none;
+  color: var(--color-principal);
+}
+.seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form div fieldset .wsf-bottom button:hover {
+  background: linear-gradient(138deg, var(--color-fondo) 0.21%, var(--color-contraste) 100.21%);
+}
+.seccion-proyecto .portada-proyecto img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.seccion-proyecto .portada-proyecto > span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: var(--color-principal);
+  opacity: 96%;
+}
+@media (max-width: 1500px) {
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto .descripcion-subtitulo {
+    width: 70%;
+  }
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form {
+    width: 60%;
+  }
+}
+@media (max-width: 1200px) {
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto .descripcion-subtitulo {
+    width: 100%;
+  }
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto .descripcion-subtitulo p {
+    text-align: justify;
+  }
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form {
+    width: 60%;
+  }
+}
+@media (max-width: 1000px) {
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto {
+    padding: 50px;
+  }
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto .descripcion-subtitulo {
+    width: 100%;
+  }
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto .descripcion-subtitulo p {
+    text-align: justify;
+  }
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form {
+    width: 70%;
+  }
+}
+@media (max-width: 650px) {
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto {
+    padding: 2.5rem;
+  }
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto .descripcion-subtitulo {
+    width: 100%;
+  }
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto .descripcion-subtitulo h3 {
+    font-size: 1.5rem;
+  }
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto .descripcion-subtitulo p {
+    text-align: justify;
+  }
+  .seccion-proyecto .portada-proyecto .breadcrumb-proyecto .contenido-proyecto form {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=servicios.css.map */

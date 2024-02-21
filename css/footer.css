@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background: linear-gradient(180deg, var(--color-principal) 0.21%, #0D0D0D 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.fondo-transparente {
+  border-radius: 25px;
+  border: 1px solid var(--Transparent, rgba(255, 255, 255, 0.03));
+  background: var(--Transparent, linear-gradient(180deg, rgba(255, 255, 255, 0.03) -30.29%, rgba(255, 255, 255, 0) 144.92%));
+  backdrop-filter: blur(5px);
+}
+
+.boton {
+  padding: 0.6875rem 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  width: max-content;
+}
+@media (max-width: 650px) {
+  .boton {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 150px;
+}
+footer .seccion1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding-top: 28px;
+}
+footer .seccion1 img {
+  margin-left: 200px;
+  width: auto;
+  height: 128px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+footer .seccion1 nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: max-content;
+}
+footer .seccion1 nav .menu--principal--footer {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 4rem;
+}
+footer .seccion1 nav .menu--principal--footer > li a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-contraste);
+  text-transform: uppercase;
+}
+footer .seccion1 nav .menu--principal--footer > li > .sub-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 32px;
+}
+footer .seccion1 nav .menu--principal--footer > li > .sub-menu li {
+  margin-bottom: 12px;
+}
+footer .seccion1 nav .menu--principal--footer > li > .sub-menu li:nth-child(3) {
+  margin: 0;
+}
+footer .seccion1 nav .menu--principal--footer > li > .sub-menu li a {
+  color: var(--color-fondo);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  transition: color 0.2s linear;
+}
+footer .seccion1 nav .menu--principal--footer > li > .sub-menu li a:hover {
+  color: var(--color-secundario);
+}
+footer .seccion2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-fondo);
+  padding-top: 16px;
+}
+footer .seccion2 .terminos--politicas {
+  display: flex;
+  gap: 64px;
+}
+footer .seccion2 .terminos--politicas a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--color-fondo);
+  transition: color 0.2s linear;
+}
+footer .seccion2 .terminos--politicas a:nth-child(3) {
+  margin: 0;
+}
+footer .seccion2 .terminos--politicas a:hover {
+  color: var(--color-contraste);
+}
+footer .seccion2 .apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .seccion2 .apps h6 {
+  color: var(--color-secundario);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+}
+footer .seccion2 .apps .tiendas--apps {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  gap: 48px;
+}
+footer .seccion2 .apps .tiendas--apps a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .seccion2 .apps .tiendas--apps a i {
+  color: var(--color-fondo);
+  margin-right: 8px;
+  transition: color 0.2s linear;
+}
+footer .seccion2 .apps .tiendas--apps a p {
+  color: var(--color-fondo);
+  transition: color 0.2s linear;
+}
+footer .seccion2 .apps .tiendas--apps a:hover i {
+  color: var(--color-contraste);
+}
+footer .seccion2 .apps .tiendas--apps a:hover P {
+  color: var(--color-contraste);
+}
+footer .seccion3 {
+  width: 100%;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+footer .seccion3 div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+footer .seccion3 div i {
+  color: var(--color-secundario);
+  font-size: 24px;
+  transition: transform 0.2s linear, color 0.2s linear;
+}
+footer .seccion3 div i:nth-child(4) {
+  margin: 0;
+}
+footer .seccion3 div i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: var(--color-contraste);
+}
+footer .seccion3 p {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-fondo);
+  text-align: center;
+}
+@media (max-width: 1500px) {
+  footer {
+    padding: 40px 100px;
+  }
+  footer .seccion1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 3rem;
+  }
+  footer .seccion1 img {
+    margin: 0;
+  }
+  footer .seccion1 nav {
+    width: 100%;
+    justify-content: center;
+  }
+  footer .seccion1 nav .menu--principal--footer {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+  }
+  footer .seccion1 nav .menu--principal--footer > li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer .seccion1 nav .menu--principal--footer > li a {
+    text-align: center;
+  }
+  footer .seccion1 nav .menu--principal--footer > li > .sub-menu li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer .seccion2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+  }
+  footer .seccion2 .terminos--politicas {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    gap: 64px;
+  }
+  footer .seccion2 .terminos--politicas a {
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  footer {
+    padding: 40px 100px;
+  }
+  footer .seccion1 nav .menu--principal--footer {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  footer {
+    padding: 40px 5rem;
+  }
+  footer .seccion1 nav .menu--principal--footer {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  footer .seccion1 nav .menu--principal--footer > li > .sub-menu {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 670px) {
+  footer {
+    padding: 40px 3rem;
+  }
+  footer .seccion2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    padding-top: 3rem;
+  }
+  footer .seccion2 .terminos--politicas {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer .seccion2 .terminos--politicas a {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  footer .seccion2 .apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  footer .seccion2 .apps h6 {
+    color: var(--color-secundario);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+  }
+  footer .seccion2 .apps .tiendas--apps {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+    gap: 2rem;
+  }
+  footer .seccion2 .apps .tiendas--apps a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .seccion2 .apps .tiendas--apps a i {
+    color: var(--color-fondo);
+    margin-right: 0;
+    transition: color 0.2s linear;
+  }
+  footer .seccion2 .apps .tiendas--apps a p {
+    color: var(--color-fondo);
+    transition: color 0.2s linear;
+    text-align: center;
+  }
+  footer .seccion2 .apps .tiendas--apps a:hover i {
+    color: var(--color-contraste);
+  }
+  footer .seccion2 .apps .tiendas--apps a:hover P {
+    color: var(--color-contraste);
+  }
+}
+@media (max-width: 400px) {
+  footer {
+    padding: 40px 2rem;
+  }
+  footer .seccion1 nav .menu--principal--footer {
+    grid-template-columns: 1fr;
+  }
+  footer .seccion1 nav .menu--principal--footer > li a {
+    font-size: 20px;
+  }
+  footer .seccion2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 3rem;
+  }
+  footer .seccion2 .terminos--politicas a {
+    font-size: 1rem;
+  }
+  footer .seccion3 {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+  footer .seccion3 p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-fondo);
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
